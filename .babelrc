@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "> 0.5%",
+            "last 2 versions",
+            "Firefox ESR",
+            "not dead",
+            "not IE 11"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react", "@babel/typescript"
+  ],
+  "ignore": [
+    "node_modules",
+    "config"
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-syntax-import-meta",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-namespace-from"
+  ]
+}

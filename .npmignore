@@ -1,0 +1,14 @@
+node_modules
+
+# Eslint Config
+.eslintrc.json
+.eslintignore
+
+# Makefile
+makefile
+
+# .gitignore
+.gitignore
+
+## .idea
+.idea

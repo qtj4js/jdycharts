@@ -2,7 +2,7 @@ import { Funnel as G2plotFunnel, FunnelOptions as G2plotConfig } from '@antv/g2p
 import React, { useEffect, useImperativeHandle, forwardRef } from 'react';
 import { BaseConfig } from '../../interface';
 import useG2Charts from "../../hooks/useG2Charts";
-import { getChart } from "../../utils/getCharts";
+import { getChart } from '../../utils';
 
 export interface FunnelConfig extends Omit<G2plotConfig, 'tooltip'>, BaseConfig<G2plotConfig> {};
 

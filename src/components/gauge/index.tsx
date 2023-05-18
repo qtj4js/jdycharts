@@ -2,7 +2,7 @@ import { Gauge as G2plotGauge, GaugeOptions as G2plotConfig } from '@antv/g2plot
 import React, {forwardRef, useEffect, useImperativeHandle} from "react";
 import { BaseConfig } from '../../interface';
 import useG2Charts from "../../hooks/useG2Charts";
-import { getChart } from "../../utils/getCharts";
+import { getChart } from '../../utils';
 
 
 export interface GaugeConfig extends Omit<G2plotConfig, 'tooltip'>, BaseConfig<G2plotConfig> {};

@@ -1,0 +1,54 @@
+@import "../../src/styles/index";
+
+body {
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.page-playground {
+  height: 100%;
+  overflow: hidden;
+  @height-menu: 60px;
+  .page-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .page-menu {
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.15) 0 2px 5px 0;
+    .menu-link {
+      color: @color-font;
+      display: block;
+      height: @height-menu;
+      line-height: @height-menu;
+      margin: 0 16px;
+      border-radius: 4px;
+      padding: 0 14px;
+      transition: all 200ms ease;
+      text-decoration: none;
+      &.selected{
+        color: @color-primary;
+      }
+      &:hover {
+        color: @color-primary;
+      }
+    }
+  }
+  .page-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: @height-menu;
+    overflow: auto;
+    .main-content {
+      padding: 30px 45px;
+    }
+  }
+}

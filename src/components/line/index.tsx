@@ -2,7 +2,7 @@ import { Line as G2plotLine, LineOptions as G2plotConfig } from '@antv/g2plot';
 import React, { useEffect, useImperativeHandle, forwardRef } from 'react';
 import { BaseConfig } from '../../interface';
 import useG2Charts from "../../hooks/useG2Charts";
-import { getChart } from "../../utils/getCharts";
+import { getChart } from '../../utils';
 
 export interface LineConfig extends Omit<G2plotConfig, 'tooltip'>, BaseConfig<G2plotConfig> {};
 

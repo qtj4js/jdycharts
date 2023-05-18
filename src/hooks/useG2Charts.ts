@@ -1,6 +1,6 @@
 import { BaseConfig, AllBaseConfig } from "../interface";
 import {useRef, useEffect} from "react";
-import {hasPath, setPath, isType, getUUID} from "../utils/utils";
+import {hasPath, setPath, isType, getUUID} from "../utils";
 import createNode from "../utils/createNode";
 import {G2, Plot} from '@antv/g2plot';
 import { isEqual, get, cloneDeep, clone } from "../utils/lodash";
@@ -59,7 +59,7 @@ const useInit = <T extends Plot<any>, U extends Base>(ChartClass: any, config: U
                     data: currentData, value: currentValue, percent: currentPercent,
                     ...currentConfig
                 } = chartOptions.current;
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                // eslint-disable-next-line
                 const { data: inputData, value: inputValue, percent: inputPercent, ...inputConfig } = config;
                 changeData = isEqual(currentConfig, inputConfig);
             }

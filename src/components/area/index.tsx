@@ -1,6 +1,6 @@
 import {Area as G2plotArea, AreaOptions as G2plotConfig} from '@antv/g2plot';
 import React, { useEffect, useImperativeHandle, forwardRef } from 'react';
-import { getChart } from "../../utils/getCharts";
+import { getChart } from "../../utils";
 import useG2Charts from "../../hooks/useG2Charts";
 import {BaseConfig} from "../../interface";
 

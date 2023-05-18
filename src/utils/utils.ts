@@ -1,5 +1,4 @@
 // 判断类型
-
 import { forEach } from "./lodash";
 
 export const isType = (value: any, type: string): boolean => {
@@ -17,6 +16,7 @@ export const getType = (n: Object) => {
  */
 export const hasPath = (source: any, path: string[]) => {
     let current = source;
+    // eslint-disable-next-line
     for (let i = 0; i < path.length; i += 1) {
         if (current?.[path[i]]) {
             current = current[path[i]];
